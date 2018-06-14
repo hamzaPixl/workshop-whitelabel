@@ -1,7 +1,7 @@
 {
   "name": "workshop-whitelabel",
   "version": "0.1.0",
-  "author": "Hamza Mounir <hamza.pixelle@gmail.com>",  
+  "author": "Hamza Mounir <hamza.pixelle@gmail.com>",
   "description": "White Label tool.",
   "license": "MIT",
   "private": true,

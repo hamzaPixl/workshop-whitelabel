@@ -1,12 +1,15 @@
 import React from 'react';
 import logo from './logo.png';
 import './App.css';
+import ReactJson from 'react-json-view'
+import FileSaver from 'file-saver';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderForm = this.renderForm.bind(this);
+    this.exportFile = this.exportFile.bind(this);
     this.state = {
       formData: {},
     }
@@ -47,6 +50,11 @@ class App extends React.Component {
     });
   }
 
+  exportFile(){
+    var blob = new Blob([JSON.stringify(this.state.formData)], {type: "application/json;charset=utf-8"});
+    FileSaver.saveAs(blob, 'whiteLabel.json');
+  }
+
   render() {
     return (
       <div className="App">
@@ -58,10 +66,9 @@ class App extends React.Component {
           {this.renderForm()}
           <button type="submit">Submit</button>
         </form>
+        <button onClick={this.exportFile} type="button">Export</button>
         <br />
-        <p className="valueForm">
-          {JSON.stringify(this.state.formData, null, 2)}
-        </p>
+        <ReactJson src={this.state.formData} theme="monokai" />
       </div>
     );
   }

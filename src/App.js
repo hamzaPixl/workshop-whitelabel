@@ -50,7 +50,7 @@ class App extends React.Component {
   }
 
   exportFile(){
-    var blob = new Blob([JSON.stringify(this.state.formData)], {type: "application/json;charset=utf-8"});
+    var blob = new Blob([JSON.stringify(this.state.formData, null, 2)], {type: "application/json;charset=utf-8"});
     FileSaver.saveAs(blob, 'whiteLabel.json');
   }
 

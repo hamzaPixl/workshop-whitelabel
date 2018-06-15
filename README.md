@@ -25,16 +25,24 @@ Définition :
 
 Voici quelques définitions de mots du jargon informatique. Afin de facilité la compréhension durant la présentation et l’exercice, il serait bien de les lire au moins une fois.
 
-Fonction:			
+Fonction:		
+		
 Variable:			
+		
 JSON:			
+		
 Boucle:			
-Condition:			
-Application web:			
-HTML:			
-Javascript:			
-
+		
+Condition:	
+		
+Application web:
+		
+HTML:		
+		
+Javascript:	
+		
 Exercice :
+		
 
 Étape 1:
 

@@ -3,6 +3,48 @@
   text-align: center;
   height: 100%;
   font-family: Roboto,sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: #317bda;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: white; /* Green */
+  color: #317bda;
+  border: 4px solid #317bda;
+  cursor: pointer;
+}
+
+.input {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #317bda;
+  font-size: 20px;
+}
+.row {
+  width: 50%;
+}
+
+.form-item {
+  text-align: center;
+  padding-bottom: 10px;
+  height: 30px;
+  width: 100%;
+}
+
+.react-json-view {
+  height: 100%;
 }
 
 .App-logo {

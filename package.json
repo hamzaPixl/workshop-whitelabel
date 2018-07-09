@@ -3,19 +3,26 @@
   "version": "0.1.0",
   "author": "Hamza Mounir <hamza.pixelle@gmail.com>",
   "description": "White Label tool.",
+  "main": "src/electron-starter.js",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "electron": "^1.4.14",
+    "electron-reload": "^1.2.5",
     "file-saver": "^1.3.8",
+    "foreman": "^2.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-json-view": "^1.17.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "react-start": "react-scripts start",    
+    "start": "nf start -p 3030",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "electron": "electron .",
+    "electron-start": "node src/electron-wait-react",
     "eject": "react-scripts eject"
   }
 }
